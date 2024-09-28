@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+  dev:
+    platform: linux/arm64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 127.0.0.1:8822:22
+    volumes:
+      - .:/usr/src/app/
+    environment:
+      DEV: 'True'
+    secrets:
+      - famly_access_token
+
+secrets:
+  famly_access_token:
+    file: ./famly_access_token.txt
