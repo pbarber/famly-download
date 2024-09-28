@@ -1,4 +1,4 @@
-# Famly app image download
+# Famly app image download
 
 The Famly app does not provide download functionality for images. A third party paid browser extension is available which allows downloads.
 
@@ -10,7 +10,7 @@ Running the script requires the user to:
 * launch a Docker container from VS Code
 * step through Python code sections in VS Code
 
-### Python setup
+## Python setup
 
 In order to access the Famly app web functionality, you will need to store a text file named `famly_access_token.txt` in the same directory as the `download.py` script. This text file should only contain the value of the `x-famly-accesstoken` header sent in requests to the Famly app. This header value can be found using the development tools in a web browser which can be typically accessed via the F12 key.
 
